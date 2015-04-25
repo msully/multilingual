@@ -6,6 +6,144 @@ languages:
   - name: 'Español'
     key: 'es'
 
+# Custom Collections
+# Creates a globally accessible list of posts based on these specified metadata variables
+jekyll_collect:
+  - topics
+
+# Settings for Google Analytics post sorting
+jekyll_ga:
+  host: 'insert_host'
+  port: 'insert_port'
+  service_account_email: insert_email
+  key_file: insert_key_file
+  key_secret: insert_key_secret
+  profileID: insert_profileID
+  start: last month         # Beginning of report
+  end: now                  # End of report
+  metric: ga:pageviews      # Metric code
+  segment:                  # optional
+  filters:                  # optional
+  sort: true                # Sort posts by this metric
+
 # Prose settings
 prose:
-  rooturl: '_posts'
+  media: 'assets'
+  rooturl: "_posts"
+  siteurl: "http://www.micren.gco.uk/multilingual"
+  metadata:
+    _posts/articles:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "meta-title"
+        field:
+          element: "text"
+          label: "Meta Title"
+          value: ""
+      - name: "meta-description"
+        field:
+          element: "text"
+          label: "Meta Description" 
+          value: ""
+      - name: "title-short"
+        field:
+          element: "text"
+          label: "Title Short"
+          value: ""
+      - name: "bite"
+        field:
+          element: "text"
+          label: "Bite"
+          value: ""
+      - name: "lang"
+        field:
+          element: "select"
+          label: "Select language"
+          placeholder: "English"
+          options: *languages
+          selected: "en"
+      - name: "layout"
+        field:
+          element: "select"
+          label: "Select a layout"
+          placeholder: "Default"
+          options:
+            - name: "article"
+              value: "basic"
+            - name: "multi-part article"
+              value: "basic-nav-left"
+            - name: "article, no sidebar"
+              value: "basic-full-page"
+          selected: "basic"
+      - name: "seo-keywords"
+        field:
+          element: "text"
+          label: "SEO Keywords"
+          value: ""
+    _posts/calendar:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "meta-title"
+        field:
+          element: "text"
+          label: "Meta Title"
+          value: ""
+      - name: "meta-description"
+        field:
+          element: "text"
+          label: "Meta Description"
+          value: ""
+      - name: "venue"
+        field:
+          element: "text"
+          label: "Venue"
+          value: ""
+      - name: "lang"
+        field:
+          element: "select"
+          label: "Select language"
+          placeholder: "English"
+          options: *languages
+          selected: "en"
+      - name: "seo-keywords"
+        field:
+          element: "text"
+          label: "SEO Keywords"
+          value: ""
+      - name: "layout"
+        field:
+          element: "select"
+          label: "Select a layout"
+          placeholder: "Default"
+          options:
+            - name: "blog"
+              value: "blog"
+      - name: "categories"
+        field:
+          element: "hidden"
+          value:
+            - "blog"
+    _posts/media:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "lang"
+        field:
+          element: "select"
+          label: "Select language"
+          placeholder: "English"
+          options: *languages
+          selected: "en"
+      - name: "short_description"
+        field:
+          element: "text"
+          label: "Short Description"
+          value: ""
