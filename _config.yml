@@ -30,7 +30,7 @@ jekyll_ga:
 prose:
   rooturl: '_posts'
   siteurl: 'http://msully.github.io/multilingual/'
-  relativeLinks: 'http://prose.github.io/multilingual/links.jsonp'
+  relativeLinks: 'http://msully.github.io/multilingual/links.jsonp'
   media: 'media'
   metadata:
     _posts:
