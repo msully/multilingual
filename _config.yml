@@ -32,7 +32,7 @@ prose:
   rooturl: "_posts"
   siteurl: "http://www.micren.co.uk/multilingual"
   metadata:
-    _posts/
+    _posts:
       - name: "title"
         field:
           element: "text"
