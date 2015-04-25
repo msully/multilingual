@@ -1,4 +1,6 @@
 baseurl: /multilingual
+permalink: pretty
+markdown: rdiscount
 permalink: /:categories/:title
 languages:
   - name: 'English'
