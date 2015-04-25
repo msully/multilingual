@@ -30,7 +30,7 @@ jekyll_ga:
 prose:
   media: 'assets'
   rooturl: "_posts"
-  siteurl: "http://www.micren.co.uk/multilingual"
+  siteurl: "http://micren.github.io/multilingual"
   metadata:
     _posts:
       - name: "title"
