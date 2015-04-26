@@ -31,9 +31,9 @@ jekyll_ga:
 # Prose settings
 prose:
   rooturl: '_posts'
-  siteurl: 'http://msully.github.io/multilingual/'
-  relativeLinks: 'http://msully.github.io/multilingual/links.jsonp'
-  media: 'media'
+  siteurl: 'http://www.micren.co.uk/multilingual/'
+  relativeLinks: 'http://www.micren.co.uk/multilingual/links.jsonp'
+  media: 'img'
   metadata:
     _posts:
       - name: "title"
