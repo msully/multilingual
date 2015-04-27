@@ -1,5 +1,4 @@
 baseurl: /multilingual
-baseurl: /starter
 permalink: pretty
 markdown: rdiscount
 languages:
